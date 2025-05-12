@@ -14,8 +14,7 @@ RUN apt-get update && apt-get install -y git
 RUN pip install --upgrade pip && pip install -r requirements.txt
 
 # 初始化子模块并下载数据
-RUN git submodule update --init --recursive --remote && \
-    python3 ./static/games/download_data.py
+RUN python3 ./static/games/download_data.py
 
 # 设置环境变量（可选）
 ENV PORT=10000d
