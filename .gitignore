@@ -109,3 +109,4 @@ static/gamedata/
 
 # PyCharm
 .idea/
+*.DS_Store
